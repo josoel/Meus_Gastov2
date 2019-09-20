@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Despesa_form">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Ensira o Nome do gasta"
+            android:ems="10"
+            android:hint="Nome da despesa"
+            android:inputType="textPersonName"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Ensira Valor"
+            android:ems="10"
+            android:hint="Valor R$:"
+            android:inputType="numberSigned|number"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Categoria"
+            android:ems="10"
+            android:hint="Ensira Categoria"
+            android:inputType="textPersonName"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnConfirma"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="136dp"
+            android:layout_height="61dp"
+            android:layout_centerInParent="true"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="Clique aqui para confirmar o cadastro"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="salvar"
+            android:text="Cadastra"
+            android:textColor="#E6A73E" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
